@@ -1,15 +1,15 @@
-import 'package:cloneappblinket/screen/otp_screen.dart';
+import 'package:cloneappblinket/screennn/page/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

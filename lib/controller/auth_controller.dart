@@ -1,7 +1,7 @@
 import 'dart:math';
-import 'package:cloneappblinket/screen/home_screen.dart';
-import 'package:cloneappblinket/screen/otp_screen.dart';
-import 'package:cloneappblinket/screen/page/home.dart';
+import 'package:cloneappblinket/screennn/testpages/home_screen.dart';
+import 'package:cloneappblinket/screennn/page/otp_screen.dart';
+import 'package:cloneappblinket/screennn/page/homeScreen.dart';
 import 'package:get/get.dart';
 
 class AuthController extends GetxController {

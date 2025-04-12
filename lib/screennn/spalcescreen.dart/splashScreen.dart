@@ -1,25 +1,26 @@
+import 'package:cloneappblinket/screennn/bottomNavigationBar/BottomNavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
-import 'login.dart';
+import '../page/loginScreen.dart';
 
-class EnhancedSplashScreen extends StatefulWidget {
-  const EnhancedSplashScreen({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  State<EnhancedSplashScreen> createState() => _EnhancedSplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _EnhancedSplashScreenState extends State<EnhancedSplashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
 
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(Duration(seconds: 3), () {
       // Your code after 3 seconds delay
       print("Executed after 3 seconds");
-      Get.to(Login());
+      Get.offAll(BottomAppBar());
     });
   }
 

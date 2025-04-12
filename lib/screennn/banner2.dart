@@ -1,4 +1,4 @@
-import 'package:cloneappblinket/screen/page/login.dart';
+import 'package:cloneappblinket/screennn/page/loginScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 

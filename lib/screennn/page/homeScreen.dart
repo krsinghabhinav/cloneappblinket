@@ -1,4 +1,6 @@
+import 'package:cloneappblinket/screennn/ProfileScreen/screen/ProfileScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -204,13 +206,13 @@ class _HomePageState extends State<HomePage> {
         'title': 'Flat ₹50 OFF',
         'subtitle': 'on your first order',
         'footer': 'above ₹299',
-        'color': Color(0xFF4CAF50),
+        'color': Color.fromARGB(255, 14, 14, 14),
       },
       {
         'icon': Icons.delivery_dining,
         'title': 'Free Delivery',
         'subtitle': 'on first 10 orders',
-        'color': Color(0xFF4CAF50),
+        'color': Color.fromARGB(255, 14, 15, 14),
       },
     ],
     'Summer': [
@@ -306,7 +308,7 @@ class _HomePageState extends State<HomePage> {
                 minHeight: 60,
                 maxHeight: 60,
                 child: Container(
-                  color: const Color(0xFFFFC300),
+                  color: const Color.fromARGB(255, 138, 247, 151),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 16,
                     vertical: 8,
@@ -346,7 +348,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildAppBar() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      color: const Color(0xFFFFC300),
+      color: const Color.fromARGB(255, 138, 247, 151),
       child: Column(
         children: [
           Row(
@@ -355,7 +357,7 @@ class _HomePageState extends State<HomePage> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  Column(
                     children: [
                       const Text(
                         'Blinkit in',
@@ -364,11 +366,14 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                    ],
+                  ),
+                  Row(
+                    children: [
                       const Text(
                         '8 minutes',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -404,10 +409,16 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              const CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 18,
-                child: Icon(Icons.person, color: Colors.black),
+              GestureDetector(
+                onTap: () {
+                  // Navigate to the next screen
+                  Get.to(ProfileScreen());
+                },
+                child: const CircleAvatar(
+                  backgroundColor: Colors.white,
+                  radius: 18,
+                  child: Icon(Icons.person, color: Colors.black),
+                ),
               ),
             ],
           ),
@@ -451,7 +462,7 @@ class _HomePageState extends State<HomePage> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 5),
       decoration: BoxDecoration(
-        color: const Color(0xFFFFC300),
+        color: const Color.fromARGB(255, 138, 247, 151),
         border: Border(bottom: BorderSide(color: Colors.grey.shade200)),
       ),
       child: Row(
@@ -506,7 +517,7 @@ class _HomePageState extends State<HomePage> {
 
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 16),
-      color: const Color(0xFFFFC300),
+      color: const Color.fromARGB(255, 138, 247, 151),
       child: Column(
         children: [
           Text(
@@ -531,7 +542,7 @@ class _HomePageState extends State<HomePage> {
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-      color: const Color(0xFFFFC300),
+      color: const Color.fromARGB(255, 138, 247, 151),
       child: Row(
         children: [
           Expanded(
