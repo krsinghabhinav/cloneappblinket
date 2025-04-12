@@ -1,4 +1,5 @@
 import 'package:cloneappblinket/screennn/ProfileScreen/screen/ProfileScreen.dart';
+import 'package:cloneappblinket/screennn/testpages/CategoryNavigationScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -173,6 +174,390 @@ class _HomePageState extends State<HomePage> {
       'category': 'Kids',
     },
   ];
+
+  // final List<Map<String, dynamic>> _bestsellers = [
+  //   {
+  //     'title': 'Dairy, Bread & Eggs',
+  //     'category': 'All',
+  //     'items': [
+  //       {
+  //         'name': 'Milk',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['milk.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Milk', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Bread',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['bread.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Bread', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Eggs',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['eggs.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Eggs', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Cheese',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['cheese.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Cheese', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Vegetables & Fruits',
+  //     'category': 'All',
+  //     'items': [
+  //       {
+  //         'name': 'Tomato',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['tomato.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Tomato', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Apple',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['apple.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Apple', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Onion',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['onion.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Onion', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Spinach',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['spinach.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Spinach', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Oil, Ghee & Masala',
+  //     'category': 'All',
+  //     'items': [
+  //       {
+  //         'name': 'Oil',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['oil.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Oil', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Ghee',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['ghee.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Ghee', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Masala 1',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['masala1.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Masala 1', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Masala 2',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['masala2.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Masala 2', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Summer Essentials',
+  //     'category': 'Summer',
+  //     'items': [
+  //       {
+  //         'name': 'Sunscreen',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['sunscreen.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Sunscreen', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Hat',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['hat.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Hat', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Sunglasses',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['sunglasses.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Sunglasses', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Fan',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['fan.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Fan', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Summer Drinks',
+  //     'category': 'Summer',
+  //     'items': [
+  //       {
+  //         'name': 'Lemon Juice',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['lemonjuice.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Lemon Juice', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Coconut Water',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['coconutwater.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Coconut Water', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Buttermilk',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['buttermilk.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Buttermilk', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Aam Panna',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['aampanna.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Aam Panna', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Smartphones',
+  //     'category': 'Electronics',
+  //     'items': [
+  //       {
+  //         'name': 'iPhone',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['iphone.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'iPhone', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Samsung',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['samsung.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Samsung', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'OnePlus',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['oneplus.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'OnePlus', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Pixel',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['pixel.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Pixel', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Skincare',
+  //     'category': 'Beauty',
+  //     'items': [
+  //       {
+  //         'name': 'Moisturizer',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['moisturizer.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Moisturizer', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Face Wash',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['facewash.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Face Wash', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Sunscreen',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['skincare_sunscreen.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Sunscreen', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Serum',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['serum.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Serum', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Makeup',
+  //     'category': 'Beauty',
+  //     'items': [
+  //       {
+  //         'name': 'Foundation',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['foundation.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Foundation', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Lipstick',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['lipstick.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {'title': 'Lipstick', 'image': 'assets/uiImages/image 35.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Mascara',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['mascara.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Mascara', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Blush',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['blush.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Blush', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     'title': 'Kids Toys',
+  //     'category': 'Toys',
+  //     'items': [
+  //       {
+  //         'name': 'Teddy Bear',
+  //         'image': 'assets/uiImages/c4.png',
+  //         'items': ['teddybear.png'],
+  //         'images': ['assets/uiImages/c4.png'],
+  //         'subItems': [
+  //           {'title': 'Teddy Bear', 'image': 'assets/uiImages/c4.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Building Blocks',
+  //         'image': 'assets/uiImages/image 35.png',
+  //         'items': ['buildingblocks.png'],
+  //         'images': ['assets/uiImages/image 35.png'],
+  //         'subItems': [
+  //           {
+  //             'title': 'Building Blocks',
+  //             'image': 'assets/uiImages/image 35.png',
+  //           },
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Car Toy',
+  //         'image': 'assets/uiImages/image 23.png',
+  //         'items': ['cartoy.png'],
+  //         'images': ['assets/uiImages/image 23.png'],
+  //         'subItems': [
+  //           {'title': 'Car Toy', 'image': 'assets/uiImages/image 23.png'},
+  //         ],
+  //       },
+  //       {
+  //         'name': 'Puzzle',
+  //         'image': 'assets/uiImages/image 36.png',
+  //         'items': ['puzzle.png'],
+  //         'images': ['assets/uiImages/image 36.png'],
+  //         'subItems': [
+  //           {'title': 'Puzzle', 'image': 'assets/uiImages/image 36.png'},
+  //         ],
+  //       },
+  //     ],
+  //   },
+  // ];
 
   // Welcome section data for each category
   final Map<String, Map<String, String>> _welcomeData = {
@@ -673,9 +1058,16 @@ class _HomePageState extends State<HomePage> {
               if (index == category['items'].length) {
                 return _buildMoreItem(category['more']);
               }
+              print("category['items'][index]${category['items'][index]}");
+              print("  category['images'][index],${category['images'][index]}");
+              print("   category['title'],,${category['title']}");
+              print("  category['items'],,${category['items']}");
               return _buildProductItem(
-                category['items'][index],
-                category['images'][index],
+                category['items'][index], //milk.png
+                category['images'][index], //assets/uiImages/c4.png
+                category['title'], // category title = Dairy, Bread & Eggs
+                category['items'], //[milk.png, bread.png, eggs.png, cheese.png]
+                category['images'], //[milk.png, bread.png, eggs.png, cheese.png]
               );
             },
           ),
@@ -684,46 +1076,113 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildProductItem(String imageName, String images) {
-    return Container(
-      width: 80,
-      margin: const EdgeInsets.symmetric(horizontal: 4),
-      child: Column(
-        children: [
-          Container(
-            height: 80,
-            width: 80,
-            decoration: BoxDecoration(
-              color: Colors.grey.shade100,
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Center(
-              child: Image.asset(
-                images,
-                width: 60,
-                height: 60,
-                errorBuilder: (context, error, stackTrace) {
-                  return Icon(
-                    Icons.image,
-                    size: 40,
-                    color: Colors.grey.shade400,
-                  );
-                },
+  Widget _buildProductItem(
+    String itemName,
+    String imagePath,
+    String categoryTitle,
+    List<String> categoryItems,
+    List<String> categoryImages,
+  ) {
+    return GestureDetector(
+      onTap: () {
+        Get.to(
+          CategoryNavigationScreen(
+            categories: [categoryTitle], // only one category
+            itemsByCategory: {categoryTitle: categoryItems},
+            imageByCategory: {categoryTitle: categoryImages},
+          ),
+        );
+      },
+      child: Container(
+        width: 80,
+        margin: const EdgeInsets.symmetric(horizontal: 4),
+        child: Column(
+          children: [
+            Container(
+              height: 80,
+              width: 80,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade100,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Center(
+                child: Image.asset(
+                  imagePath,
+                  width: 60,
+                  height: 60,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Icon(
+                      Icons.image,
+                      size: 40,
+                      color: Colors.grey.shade400,
+                    );
+                  },
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            imageName.split('.').first,
-            style: const TextStyle(fontSize: 12),
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
-          ),
-        ],
+            const SizedBox(height: 4),
+            Text(
+              itemName.split('.').first,
+              style: const TextStyle(fontSize: 12),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }
+
+  // Widget _buildProductItem(String imageName, String images) {
+  //   return GestureDetector(
+  //     onTap: () {
+  //       Get.to(CategoryNavigationScreen(
+
+  //         categories: _categories,
+  //         itemsByCategory: _bestsellers,
+  //       ));
+  //     },
+  //     child: Container(
+  //       width: 80,
+  //       margin: const EdgeInsets.symmetric(horizontal: 4),
+  //       child: Column(
+  //         children: [
+  //           Container(
+  //             height: 80,
+  //             width: 80,
+  //             decoration: BoxDecoration(
+  //               color: Colors.grey.shade100,
+  //               borderRadius: BorderRadius.circular(8),
+  //             ),
+  //             child: Center(
+  //               child: Image.asset(
+  //                 images,
+  //                 width: 60,
+  //                 height: 60,
+  //                 errorBuilder: (context, error, stackTrace) {
+  //                   return Icon(
+  //                     Icons.image,
+  //                     size: 40,
+  //                     color: Colors.grey.shade400,
+  //                   );
+  //                 },
+  //               ),
+  //             ),
+  //           ),
+  //           const SizedBox(height: 4),
+  //           Text(
+  //             imageName.split('.').first,
+  //             style: const TextStyle(fontSize: 12),
+  //             maxLines: 2,
+  //             overflow: TextOverflow.ellipsis,
+  //             textAlign: TextAlign.center,
+  //           ),
+  //         ],
+  //       ),
+  //     ),
+  //   );
+  // }
 
   Widget _buildMoreItem(String text) {
     return Container(
